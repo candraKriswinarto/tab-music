@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, .container {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+
+.tab-top {
+  margin-top: 4rem;
+}
+
+.tab-center {
+  width: 100%;
+  height: 100px;
+}
+
+.pads{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.pads > div {
+  height: 100%;
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.pads > div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 50px;
+}
+
+.pad1 {
+  background: rgb(93, 209, 70);
+}
+.pad2 {
+  background: rgb(70, 208, 212);
+}
+.pad3 {
+  background: rgb(214, 69, 69);
+}
+.pad4 {
+  background: rgb(78, 76, 221);
+}
+.pad5 {
+  background: rgb(100, 224, 50);
+}
+.pad6 {
+  background: rgb(52, 199, 150);
+}
+
+@keyframes visual {
+  0% {
+   height: 50px; 
+  }
+  50% {
+    height: 400px;
+    width: 50px;
+  }
+  100% {
+    height: 50px;
+  }
+}
